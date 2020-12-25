@@ -1,0 +1,55 @@
+name: Daily Workflow
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '5 0 * * *' # At GMT 00:05
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest=
+
+    steps:
+    - name: Checkout app repo
+      uses: actions/checkout@v2
+      with:
+        path: app
+
+    - name: Checkout data repo
+      uses: actions/checkout@v2
+      with:
+        repository: https://github.com/badmikko/price-update.git
+        persist-credentials: false
+        path: data
+        
+    - name: Install NodeJS
+      uses: actions/setup-node@v1
+
+    - name: Npm install
+      run: npm install
+      working-directory: ./app
+      
+    - name: Run app
+      run: node ./price-download.js --dest ../data/Data
+      working-directory: ./app
+
+    - name: Get current time
+      uses: 1466587594/get-current-time@v2
+      id: current-time
+      with:
+        format: YYYY/MM/DD
+      
+    #https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+    - name: Push into data repo
+      uses: github-actions-x/commit@v2.7
+      working-directory: ./data
+      with:
+        github-token: ${{ secrets.COMMIT_TOKEN }}
+        push-branch: 'master'
+        commit-message: Daily refresh on ${{ steps.current-time.outputs.formattedTime }}
+        force-add: 'true'
+        name: BadMikko Bot
+        email: my.github@email.com 

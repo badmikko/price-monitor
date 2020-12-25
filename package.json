@@ -1,0 +1,32 @@
+{
+  "name": "price-monitor",
+  "version": "1.0.0",
+  "description": "price monitor",
+  "main": "price-download.js",
+  "dependencies": {
+    "await-timeout": "^1.1.1",
+    "axios": "^0.21.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "debug": "^4.3.1",
+    "filenamify": "^4.2.0",
+    "handlebars": "^4.7.6",
+    "hot-formula-parser": "^3.0.2",
+    "js-yaml": "^3.14.1",
+    "jsdom": "^16.4.0",
+    "mdtable2json": "^0.1.0",
+    "mocha": "^8.2.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "tablemark": "^2.0.0",
+    "turndown": "^7.0.0",
+    "unicode-substring": "^1.0.0",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -V"
+  },
+  "author": "",
+  "license": "ISC"
+}
