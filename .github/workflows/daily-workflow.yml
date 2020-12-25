@@ -23,7 +23,6 @@ jobs:
       with:
         repository: badmikko/price-update
         token: ${{ secrets.COMMIT_TOKEN }}
-        persist-credentials: false
         path: data
         
     - name: Install NodeJS
@@ -31,11 +30,11 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Npm install
+    - name: Install npm packages
       run: npm install
       working-directory: ./app
       
-    - name: Run app
+    - name: Run price-download
       run: node ./price-download.js --dest ../data/Data
       working-directory: ./app
 
@@ -50,6 +49,7 @@ jobs:
       with:
         author_name: ${{ secrets.COMMIT_NAME }}
         author_email: ${{ secrets.COMMIT_EMAIL }}
+        branch: main
         cwd: './data'
         message: Daily refreshment on ${{ steps.current-time.outputs.formattedTime }}
         push: true
