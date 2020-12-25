@@ -37,6 +37,8 @@ jobs:
     - name: Run price-download
       run: node ./price-download.js --dest ../data/Data
       working-directory: ./app
+      env:
+        DEBUG: "*,-axios,-follow-redirects"
 
     - name: Get current time
       uses: 1466587594/get-current-time@v2
