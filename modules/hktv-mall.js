@@ -68,15 +68,15 @@ async function retrieve(product) {
   result.price.unitPrice = runUnitPriceFormula(product['unit-convertsion'], result.price.discountedPrice || result.price.regularPrice, product.unit);
 
   const promotions = [];
-  promotions.push(response.data.buyMoreSaveMore?.promotionLevels?.map(i => ({
+  promotions.push.apply(promotions, response.data.buyMoreSaveMore?.promotionLevels?.map(i => ({
     startTime: i.startTime,
     message: `**${md.html2md(i.message)}**`
   })));
-  promotions.push(response.data.thresholdPromotionList?.map(i => ({
+  promotions.push.apply(promotions, response.data.thresholdPromotionList?.map(i => ({
     startTime: i.startTime,
     message: `**${md.html2md(i.name)}**\n${md.html2md(i.description)}`
   })));
-  promotions.push(response.data.perfectPartnerPromotionList?.map(i => ({
+  promotions.push.apply(promotions, response.data.perfectPartnerPromotionList?.map(i => ({
     startTime: i.startTime,
     message: `**${md.html2md(i.name)}**\n${md.html2md(i.description)}`
   })));

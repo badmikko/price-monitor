@@ -10,15 +10,15 @@ async function createProductFolder(base, storeId, productId, productName) {
   const segment = [];
   segment.push(storeId);
   segment.push(productId);
-  const folderNamePrefix = filenamify([...segment, ""].join(SEPARATOR)); // Example: "StoreID--ProductID--"
+  const folderNamePrefix = filenamify(["", ...segment].join(SEPARATOR)); // Example: "--StoreID--ProductID"
   const storeFolderPath = path.join(base, filenamify(storeId)); // Example: "./Data/StoreID/"
   
   // If store data folder exists, go ahead check on product folder inside.
   // Otherwise, product folder must not be exists currently, go create folders.
   if (fs.existsSync(storeFolderPath)) {
     const folders = (await fs.promises.readdir(storeFolderPath, { withFileTypes: true }))
-      .filter(dirent => dirent.isDirectory() && dirent.name.startsWith(folderNamePrefix))
-      .map(dirent => dirent.name); // ["StoreID--ProductID--Name"]
+      .filter(dirent => dirent.isDirectory() && dirent.name.endsWith(folderNamePrefix))
+      .map(dirent => dirent.name); // ["Name--StoreID--ProductID"]
 
     if (folders.length > 0) {
       const existingFolderPath = path.join(storeFolderPath, folders[0])
@@ -27,9 +27,9 @@ async function createProductFolder(base, storeId, productId, productName) {
     }
   }
 
-  segment.push(unicodeSubstring(productName?.trim(), 0, 40));
-  const folderName = filenamify(segment.join(SEPARATOR)); // Example: "StoreID--ProductID--Name"
-  const newFolderPath = path.join(storeFolderPath, folderName); // Example: "./Data/StoreID/StoreID--ProductID--Name"
+  segment.unshift(unicodeSubstring(productName?.trim(), 0, 40));
+  const folderName = filenamify(segment.join(SEPARATOR)); // Example: "Name--StoreID--ProductID"
+  const newFolderPath = path.join(storeFolderPath, folderName); // Example: "./Data/StoreID/Name--StoreID--ProductID"
   log(`Creating folder. path=${newFolderPath}`);
   fs.mkdirSync(newFolderPath, {
     recursive: true
