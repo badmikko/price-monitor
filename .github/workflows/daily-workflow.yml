@@ -41,15 +41,15 @@ jobs:
       id: current-time
       with:
         format: YYYY/MM/DD
-      
+    
     #https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-    - name: Push into data repo
-      uses: github-actions-x/commit@v2.7
-      working-directory: ./data
+    - uses: EndBug/add-and-commit@v6 # You can change this to use a specific version
       with:
-        github-token: ${{ secrets.COMMIT_TOKEN }}
-        push-branch: 'master'
-        commit-message: Daily refresh on ${{ steps.current-time.outputs.formattedTime }}
-        force-add: 'true'
-        name: BadMikko Bot
-        email: my.github@email.com 
+        author_name: ${{ secrets.COMMIT_NAME }}
+        author_email: ${{ secrets.COMMIT_EMAIL }}
+        cwd: './data'
+        message: Daily refreshment on ${{ steps.current-time.outputs.formattedTime }}
+        push: true
+        signoff: true
+        token: ${{ secrets.COMMIT_TOKEN }}
+    
