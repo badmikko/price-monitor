@@ -22,6 +22,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: badmikko/price-update
+        token: ${{ secrets.COMMIT_TOKEN }}
         persist-credentials: false
         path: data
         
