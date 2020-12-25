@@ -80,7 +80,7 @@ async function retrieve(product) {
     startTime: i.startTime,
     message: `**${md.html2md(i.name)}**\n${md.html2md(i.description)}`
   })));
-  result.price.promotions = promotions.filter(i => !!i).sort((a, b) => a.startTime - b.startTime).map(i => i.message);
+  result.price.promotions = promotions.filter(i => !!i).sort((a, b) => a.startTime - b.startTime).map(i => i.message).join("\n");
   
   return result;
 }
