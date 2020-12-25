@@ -21,7 +21,7 @@ jobs:
     - name: Checkout data repo
       uses: actions/checkout@v2
       with:
-        repository: https://github.com/badmikko/price-update.git
+        repository: badmikko/price-update
         persist-credentials: false
         path: data
         
