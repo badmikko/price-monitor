@@ -10,8 +10,8 @@ const config = require("./utils/config").parseConfigWithTemplate("./config/confi
 
 const argv = system.parseArgv();
 const basePath = argv.dest || file.pathResolve(".");
-const baseDataPath = file.join(basePath, "data");
-const baseDocsPath = file.join(basePath, "docs");
+const baseDataPath = file.pathJoin(basePath, "data");
+const baseDocsPath = file.pathJoin(basePath, "docs");
 
 
 (async () => {
@@ -45,8 +45,8 @@ async function handleProduct(product, log) {
   }
 
   const folderPath = await file.createProductFolder(baseDataPath, product.source, product.id, product.name);
-  const specFilePath = file.join(folderPath, "Spec.md");
-  const priceFilePath = file.join(folderPath, `${date.format("YYYYMM")}.csv`);
+  const specFilePath = file.pathJoin(folderPath, "Spec.md");
+  const priceFilePath = file.pathJoin(folderPath, `${date.format("YYYYMM")}.csv`);
 
   // Spec
   {

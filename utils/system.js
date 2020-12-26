@@ -9,7 +9,7 @@ async function wait(period) {
 }
 
 function loadModule(name) {
-  const filePath = file.join(`../modules`, name);
+  const filePath = file.pathJoin(`../modules`, name);
   try {
     require.resolve(filePath);
   } catch (e) {
