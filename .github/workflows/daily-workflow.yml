@@ -18,12 +18,12 @@ jobs:
       with:
         path: app
 
-    - name: Checkout data repo
+    - name: Checkout store repo
       uses: actions/checkout@v2
       with:
         repository: badmikko/price-update
         token: ${{ secrets.COMMIT_TOKEN }}
-        path: data
+        path: store
         
     - name: Install NodeJS
       uses: actions/setup-node@v2
@@ -35,7 +35,7 @@ jobs:
       working-directory: ./app
       
     - name: Run price-download
-      run: node ./price-download.js --dest ../data/Data
+      run: node ./price-download.js --dest ../store/data
       working-directory: ./app
       env:
         DEBUG: "*,-axios,-follow-redirects"
@@ -47,12 +47,13 @@ jobs:
         format: YYYY/MM/DD
     
     #https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-    - uses: EndBug/add-and-commit@v6 # You can change this to use a specific version
+    - name: Commit store repository
+      uses: EndBug/add-and-commit@v6 # You can change this to use a specific version
       with:
         author_name: ${{ secrets.COMMIT_NAME }}
         author_email: ${{ secrets.COMMIT_EMAIL }}
         branch: main
-        cwd: './data'
+        cwd: './store'
         message: Daily refreshment on ${{ steps.current-time.outputs.formattedTime }}
         push: true
         signoff: true

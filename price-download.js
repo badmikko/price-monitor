@@ -9,7 +9,7 @@ const system = require("./untils/system");
 const config = require("./untils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
 
 const argv = system.parseArgv();
-const basePath = argv.dest || file.pathResolve("Data");
+const basePath = argv.dest || file.pathResolve("data");
 
 
 (async () => {
