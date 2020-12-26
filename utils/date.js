@@ -1,5 +1,5 @@
 const moment = require('moment-timezone');
-const TIMEZONE = "GMT";
+const TIMEZONE = "Asia/Hong_Kong";
 
 // var timestamp = moment(thread.date || new Date());
 // segment.push(timestamp.format("YYYYMMDD"));
