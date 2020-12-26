@@ -1,12 +1,12 @@
 require('debug').log = console.log.bind(console);
 const log = require('debug')('price-download');
 
-const md = require("./untils/markdown");
-const file = require("./untils/file");
-const csv = require("./untils/csv");
-const date = require("./untils/date");
-const system = require("./untils/system");
-const config = require("./untils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
+const md = require("./utils/markdown");
+const file = require("./utils/file");
+const csv = require("./utils/csv");
+const date = require("./utils/date");
+const system = require("./utils/system");
+const config = require("./utils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
 
 const argv = system.parseArgv();
 const basePath = argv.dest || file.pathResolve("data");
