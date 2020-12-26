@@ -71,6 +71,9 @@ async function retrieve(product) {
   } else {
     result.price.unitPrice = result.price.bestPrice;
   }
+
+  // Update Static Page
+  result.static.purchasable = result.price.purchasable;
   result.static.regularPrice = result.price.regularPrice;
   result.static.bestPrice = result.price.bestPrice;
   result.static.unitPrice = result.price.unitPrice;
