@@ -5,7 +5,7 @@ const turndownService = new TurndownService();
 const tablemark = require('tablemark')
 
 // https://github.com/vzaccaria/mdtable2json
-var mdtable2json = require('mdtable2json')
+var mdtable2json = require('../third-party/mdtable2json')
 
 const KEY_NAME = "Label";
 const VALUE_NAME = "Value";
@@ -15,6 +15,7 @@ const CURRENT_HEADER = [
   {id: 'brandName', title: 'Brand Name'},
   {id: 'storeName', title: 'Store Name'},
   {id: 'packingSpec', title: 'Packing Spec'},
+  {id: 'purchasable', title: 'Purchasable'},
   {id: 'regularPrice', title: 'Regular Price'},
   {id: 'bestPrice', title: 'Best Price'},
   {id: 'unitPrice', title: 'Unit Price'},

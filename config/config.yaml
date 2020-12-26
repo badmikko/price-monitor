@@ -164,4 +164,4 @@ notification:
     condition: true
 
 app:
-  timePeriod: 90
+  timePeriod: 30

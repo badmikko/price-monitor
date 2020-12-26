@@ -42,7 +42,7 @@ async function retrieve(product) {
       return "";
     }
     let value = typeof obj.result === "string" ? parseFloat(obj.result) : obj.result;
-    return value.toPrecision(2);
+    return value.toFixed(2);
   }
 
   if(response.data.error) {
