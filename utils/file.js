@@ -31,10 +31,14 @@ async function createProductFolder(base, storeId, productId, productName) {
   const folderName = filenamify(segment.join(SEPARATOR)); // Example: "Name--StoreID--ProductID"
   const newFolderPath = path.join(storeFolderPath, folderName); // Example: "./Data/StoreID/Name--StoreID--ProductID"
   log(`Creating folder. path=${newFolderPath}`);
+  createFolder(newFolderPath);
+  return newFolderPath;
+}
+
+function createFolder(newFolderPath) {
   fs.mkdirSync(newFolderPath, {
     recursive: true
   });
-  return newFolderPath;
 }
 
 async function writeFile(filePath, content, options) {
@@ -49,7 +53,7 @@ async function readFile(filePath, options = {}) {
   return await fs.promises.readFile(filePath, mergedOptions);
 }
 
-function join(...array) {
+function pathJoin(...array) {
   return path.join.apply(path, array);
 }
 
@@ -59,10 +63,11 @@ function getWorkingDirectory() {
 
 module.exports = {
   createProductFolder,
+  createFolder,
   writeFile,
   readFile,
-  join,
+  pathJoin,
   getWorkingDirectory,
   pathResolve: path.resolve,
-  fileExists: fs.existsSync
+  fileExists: fs.existsSync,
 };

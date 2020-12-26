@@ -9,7 +9,9 @@ const system = require("./utils/system");
 const config = require("./utils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
 
 const argv = system.parseArgv();
-const basePath = argv.dest || file.pathResolve("data");
+const basePath = argv.dest || file.pathResolve(".");
+const baseDataPath = file.join(basePath, "data");
+const baseDocsPath = file.join(basePath, "docs");
 
 
 (async () => {
@@ -42,7 +44,7 @@ async function handleProduct(product, log) {
     return;
   }
 
-  const folderPath = await file.createProductFolder(basePath, product.source, product.id, product.name);
+  const folderPath = await file.createProductFolder(baseDataPath, product.source, product.id, product.name);
   const specFilePath = file.join(folderPath, "Spec.md");
   const priceFilePath = file.join(folderPath, `${date.format("YYYYMM")}.csv`);
 

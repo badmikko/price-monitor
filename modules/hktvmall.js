@@ -1,6 +1,6 @@
 const axios = require('axios');
-const date = require("../untils/date");
-const md = require("../untils/markdown");
+const date = require("../utils/date");
+const md = require("../utils/markdown");
 const FormulaParser = require('hot-formula-parser').Parser;
 
 const options = { 

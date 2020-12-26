@@ -35,7 +35,7 @@ jobs:
       working-directory: ./app
       
     - name: Run price-download
-      run: node ./price-download.js --dest ../store/data
+      run: node ./price-download.js --dest ../store
       working-directory: ./app
       env:
         DEBUG: "*,-axios,-follow-redirects"
