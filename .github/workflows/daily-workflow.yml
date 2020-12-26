@@ -3,7 +3,7 @@ name: Daily refreshment
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: '5 0 * * *' # At GMT 00:05
 
