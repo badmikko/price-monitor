@@ -31,9 +31,6 @@ const basePath = argv.dest || file.pathResolve("Data");
 
 
 async function handleProduct(product, log) {
-  const jsdom = require("jsdom");
-  const { JSDOM } = jsdom;
-
   const module = system.loadModule(product.source);
   if(!module) {
     log(`Cannot load module, quiting...`);

@@ -32,7 +32,7 @@ async function retrieve(product) {
   }
 
   
-  function runUnitPriceFormula(formula, price, unit) {
+  function runUnitPriceFormula(formula, price) {
     parser.setVariable('price', price);
     let obj = parser.parse(formula);
     if(obj.error) {
@@ -42,7 +42,7 @@ async function retrieve(product) {
       return "";
     }
     let value = typeof obj.result === "string" ? parseFloat(obj.result) : obj.result;
-    return value.toPrecision(2) + "/" + unit;
+    return value.toPrecision(2);
   }
 
   if(response.data.error) {
@@ -54,7 +54,7 @@ async function retrieve(product) {
     static: {
       name: response.data.name,
       brandName: response.data.brandName, 
-      storeName: response.data.storeName,
+      storeName: `HKTVMall - ${response.data.storeName}`,
       packingSpec: response.data.packingSpec,
     },
     price: {}
@@ -63,9 +63,18 @@ async function retrieve(product) {
   result.price.date = date.format("YYYY-MM-DD")
   result.price.purchasable = response.data.purchasable;
   result.price.regularPrice = formatPrice(response.data.priceList?.filter(i => i.priceType == 'BUY')[0]?.formattedValue);
-  result.price.discountedPrice = formatPrice(response.data.priceList?.filter(i => i.priceType == 'DISCOUNT')[0]?.formattedValue);
-  result.price.lowestPrice = formatPrice(response.data.priceList.sort((a, b) => a.value - b.value)[0]?.formattedValue);
-  result.price.unitPrice = runUnitPriceFormula(product['unit-convertsion'], result.price.discountedPrice || result.price.regularPrice, product.unit);
+  result.price.bestPrice = formatPrice(response.data.priceList?.filter(i => i.priceType == 'DISCOUNT')[0]?.formattedValue) || result.price.regularPrice;
+  //result.price.lowestPrice = formatPrice(response.data.priceList.sort((a, b) => a.value - b.value)[0]?.formattedValue);
+  
+  if(!!product['unit-convertsion']) {
+    result.price.unitPrice = runUnitPriceFormula(product['unit-convertsion'], result.price.bestPrice);
+  } else {
+    result.price.unitPrice = result.price.bestPrice;
+  }
+  result.static.regularPrice = result.price.regularPrice;
+  result.static.bestPrice = result.price.bestPrice;
+  result.static.unitPrice = result.price.unitPrice;
+  result.static.unitPriceUnit = product.unit;
 
   const promotions = [];
   promotions.push.apply(promotions, response.data.buyMoreSaveMore?.promotionLevels?.map(i => ({

@@ -159,6 +159,9 @@ groups:
     description: description 2
 
 notification:
-- name: telegram 
-  recipient: {{TELEGRAM_RECIPIENT}}
-  condition: true
+  - name: telegram 
+    recipient: {{TELEGRAM_RECIPIENT}}
+    condition: true
+
+app:
+  timePeriod: 90

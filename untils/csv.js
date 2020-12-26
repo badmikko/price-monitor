@@ -4,7 +4,7 @@ const CURRENT_HEADER = [
   {id: 'date', title: 'Date'},
   {id: 'purchasable', title: 'Purchasable'},
   {id: 'regularPrice', title: 'Regular Price'},
-  {id: 'discountedPrice', title: 'Discounted Price'},
+  {id: 'bestPrice', title: 'Best Price'},
   {id: 'unitPrice', title: 'Unit Price'},
   {id: 'promotions', title: 'Promotions'},
   {id: 'remarks', title: 'Remarks'}
@@ -13,7 +13,8 @@ const CURRENT_HEADER = [
 const OLD_HEADER = [
   ...CURRENT_HEADER, 
   {id: 'thresholdPromotions', title: 'Threshold Promotions'},
-  {id: 'perfectPartnerPromotions', title: 'Perfect Partner Promotions'}
+  {id: 'perfectPartnerPromotions', title: 'Perfect Partner Promotions'},
+  {id: 'discountedPrice', title: 'Discounted Price'}
 ];
 
 // CSV -> JSON
@@ -57,9 +58,14 @@ async function readCSV(filePath) {
     const results = [];
     fs.createReadStream(filePath)
       .pipe(csvParser({
-        mapHeaders2: ({ header, index }) => header.toLowerCase(),
         mapHeaders: ({ header, index }) => {
-          return OLD_HEADER.filter(i => i.title == header)?.[0]?.id
+          return OLD_HEADER.filter(i => i.title == header)?.[0]?.id || header
+        },
+        mapValues: ({ header, index, value }) => {
+          if(header.endsWith("Price")) {
+            return parseFloat(value);
+          }
+          return value;
         }
       }))
       .on('data', (data) => results.push(data))

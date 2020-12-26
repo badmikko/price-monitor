@@ -41,6 +41,14 @@ async function writeFile(filePath, content, options) {
   await fs.promises.writeFile(filePath, content, options);
 }
 
+async function readFile(filePath, options = {}) {
+  const defaultOptions = {
+    encoding: "utf-8"
+  };
+  let mergedOptions = {...defaultOptions, ...options};
+  return await fs.promises.readFile(filePath, mergedOptions);
+}
+
 function join(...array) {
   return path.join.apply(path, array);
 }
@@ -52,7 +60,9 @@ function getWorkingDirectory() {
 module.exports = {
   createProductFolder,
   writeFile,
+  readFile,
   join,
   getWorkingDirectory,
-  pathResolve: path.resolve
+  pathResolve: path.resolve,
+  fileExists: fs.existsSync
 };
