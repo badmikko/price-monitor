@@ -578,12 +578,159 @@ products:
     tags: 
       - 可樂
   - source: hktvmall
-    id: /H8032001_S_SD-00004
-    name: 可口可樂 - 加系可口可樂 (白色罐) - Coca Cola Plus -原箱 (罐裝- 24 X 330ml )
+    id: H8032001_S_SD-00004
+    name: 可口可樂 - 加系可口可樂 (白色罐) - Coca Cola Plus -原箱 (罐裝- 24 X 330ml)
     unit: can
     unit-convertsion: price / 24
     tags: 
       - 可樂
+  - source: hktvmall
+    id: H8260001_S_15285425
+    name: 屈臣氏 - 蒸餾水-原箱 800亳升
+    unit: 100ml
+    unit-convertsion: price / 800 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_P10003353
+    name: 維他 - [原箱] 純蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H7509001_S_klwv7000101box
+    name: 維他奶 - 維他 - (原箱) 純蒸餾水 700ml X 24支
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020854K
+    name: Watsons - 屈臣氏蒸餾水 x 12
+    unit: 100ml
+    unit-convertsion: price / 800 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H8260001_S_50000035
+    name: 維他 - 純蒸餾水 - 原箱 700亳升
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_P10020854
+    name: Watsons - [原箱] 屈臣氏蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 800 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020859K
+    name: Watsons - 屈臣氏礦物質蒸餾水 x 12
+    unit: 100ml
+    unit-convertsion: price / 800 / 12 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0900001_S_DK01
+    name: 維他 - 24X 維他 純蒸餾水(24 x 700ml)
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020854G
+    name: Watsons - 屈臣氏蒸餾水 x 8
+    unit: 100ml
+    unit-convertsion: price / 800 / 8 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_P10020859
+    name: Watsons - [原箱] 屈臣氏礦物質蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 800 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020854E
+    name: Watsons - 屈臣氏蒸餾水 x 6
+    unit: 100ml
+    unit-convertsion: price / 800 / 6 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: S2090001_S_400106
+    name: 維他 - [原箱] 蒸餾水 (700毫升 X 24)
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H8260001_S_50000133
+    name: 屈臣氏 - 礦物質蒸餾水 - 原箱 800亳升
+    unit: 100ml
+    unit-convertsion: price / 800 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020854C
+    name: Watsons - 屈臣氏蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 800 / 4 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020859E
+    name: Watsons - 屈臣氏礦物質蒸餾水 x 6
+    unit: 100ml
+    unit-convertsion: price / 800 / 6 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020854
+    name: Watsons - 屈臣氏蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 800 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020859G
+    name: Watsons - 屈臣氏礦物質蒸餾水 x 8
+    unit: 100ml
+    unit-convertsion: price / 800 / 8 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H0888001_S_10020859C
+    name: Watsons - 屈臣氏礦物質蒸餾水
+    unit: 100ml
+    unit-convertsion: price / 800 / 4 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: S2090001_S_400759P
+    name: Watsons - [原箱] 屈臣氏蒸餾水 (620毫升 X 24)
+    unit: 100ml
+    unit-convertsion: price / 620 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H8344001_S_M0031
+    name: 維他 - 純蒸餾水 x 24 枝
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
+  - source: hktvmall
+    id: H7730001_S_VITA700
+    name: 維他 - 維他 純蒸餾水-原箱 700MLX24
+    unit: 100ml
+    unit-convertsion: price / 700 / 24 * 100
+    tags: 
+      - 蒸餾水
 
 tags:
   - name: Chopper
