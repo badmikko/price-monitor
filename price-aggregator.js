@@ -13,26 +13,15 @@ const basePath = argv.dest || file.pathResolve(".");
 const baseDataPath = file.pathJoin(basePath, "data");
 const baseDocsPath = file.pathJoin(basePath, "docs");
 
-//get 90 days
-// - months across
-// - start day
-//loop products
-// - get spec
-// - get price data for 90 days 
-//   - read csv
-//     - buyable = false, price = 0
-// - generate json
-// generate html
-
-// https://github.com/olifolkerd/tabulator
-// http://tabulator.info/examples/4.9?#sparklines
-
 const timePeriod = config.app.timePeriod || 30;
 const endDate = date.today();
 const startDate = date.addDays(-(timePeriod - 1), endDate);
 const monthsAcross = date.getAllMonthsBetween(startDate, endDate);
 const datesAcross = date.getAllDatesBetween(startDate, endDate);
 const datesAcrossInString = datesAcross.map(d => date.format("YYYY-MM-DD", d));
+
+// Create doc folder if not exists
+file.createFolder(baseDocsPath);
 
 (async () => {
   const total = config.products.length;

@@ -1,5 +1,8 @@
 data
-docs
 .vscode
 node_modules
 gitignore
+docs/data.js
+docs/data.json
+docs/tags.json
+docs/index2.html

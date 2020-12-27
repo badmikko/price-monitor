@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Execution scope
+      run: echo Download: ${{ secrets.RUN_DOWNLOAD != '0' }}, Aggregator: ${{ secrets.RUN_AGGREGATOR != '0' }}
+
     - name: Checkout app repo
       uses: actions/checkout@v2
       with:
@@ -35,12 +39,14 @@ jobs:
       working-directory: ./app
       
     - name: Run price-download
+      if: ${{ secrets.RUN_DOWNLOAD != '0' }}
       run: node ./price-download.js --dest ../store
       working-directory: ./app
       env:
         DEBUG: "*,-axios,-follow-redirects"
       
     - name: Run price-aggregator
+      if: ${{ secrets.RUN_AGGREGATOR != '0' }}
       run: node ./price-aggregator.js --dest ../store
       working-directory: ./app
       env:
