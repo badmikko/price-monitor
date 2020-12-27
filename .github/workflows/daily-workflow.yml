@@ -37,8 +37,8 @@ jobs:
 
     - name: Execution scope
       run: |-
-        echo "Run Download: ${needs.preflight.outputs.RUN_DOWNLOAD}"
-        echo "Run Aggregator: ${needs.preflight.outputs.RUN_AGGREGATOR}"
+        echo "Run Download: ${{needs.preflight.outputs.RUN_DOWNLOAD}}"
+        echo "Run Aggregator: ${{needs.preflight.outputs.RUN_AGGREGATOR}}"
 
     - name: Checkout app repo
       uses: actions/checkout@v2
