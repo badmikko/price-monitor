@@ -293,7 +293,7 @@ products:
   - source: hktvmall
     id: H0888001_S_10009531A
     name: Alpecin - [優惠孖裝] [原裝正貨] C1咖啡因洗髮露 優惠孖裝 - 防脫髮 激活頭髮生長
-    unit: 250ml x 2
+    unit: 250ml
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
@@ -349,7 +349,7 @@ products:
   - source: hktvmall
     id: H8455001_S_4008666211187d
     name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
-    unit: 250ml x 2
+    unit: 250ml
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
@@ -357,7 +357,7 @@ products:
   - source: hktvmall
     id: H6544001_S_4008666211187d
     name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
-    unit: 250ml x 2
+    unit: 250ml
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
@@ -365,7 +365,7 @@ products:
   - source: hktvmall
     id: H6242001_S_11187X6
     name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250mlX6支 [平行進口產品]
-    unit: 250ml x 6
+    unit: 250ml
     unit-convertsion: price / 6
     tags: 
       - 洗頭水
@@ -532,7 +532,7 @@ products:
     id: H0888001_S_10132278A
     name: 可口可樂 - Plus- 膳食纖維 (無糖) - 樽裝
     unit: 330ml
-    unit-convertsion: price / 500 / 2
+    unit-convertsion: price / 500 / 2 * 330
     tags: 
       - 可樂
   - source: hktvmall

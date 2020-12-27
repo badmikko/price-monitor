@@ -21,7 +21,7 @@ jobs:
     - name: Checkout store repo
       uses: actions/checkout@v2
       with:
-        repository: badmikko/price-update
+        repository: badmikko/price-aggregator
         token: ${{ secrets.COMMIT_TOKEN }}
         path: store
         
@@ -36,6 +36,12 @@ jobs:
       
     - name: Run price-download
       run: node ./price-download.js --dest ../store
+      working-directory: ./app
+      env:
+        DEBUG: "*,-axios,-follow-redirects"
+      
+    - name: Run price-aggregator
+      run: node ./price-aggregator.js --dest ../store
       working-directory: ./app
       env:
         DEBUG: "*,-axios,-follow-redirects"
