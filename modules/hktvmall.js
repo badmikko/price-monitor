@@ -21,7 +21,6 @@ async function retrieve(product) {
     return null;
   }
   log(`data downloaded`);
-  //log(response.body);
 
   function escape(html) {
     return html.replace(/\|/g, '\\|');
@@ -56,6 +55,7 @@ async function retrieve(product) {
       brandName: response.data.brandName, 
       storeName: `HKTVMall - ${response.data.storeName}`,
       packingSpec: response.data.packingSpec,
+      link: `https://www.hktvmall.com/p/${product.id}`
     },
     price: {}
   }

@@ -15,19 +15,102 @@ products:
     name: 雞蛋
     unit: 100ml
     unit-convertsion: price / 280 * 100
-    groups: group1, group2
   - source: hktvmall
     id: H0888001_S_10140667
     name: 威露士 泡沫殺菌潔手液敏感呵護
     unit: 100ml
     unit-convertsion: price / 280 * 100
-    groups: group1, group2
   - source: hktvmall
     id: H0888001_S_10050052D
-    name: 皇冠 三層棉柔舒適衛生紙10卷裝
+    name: 皇冠 - [5條優惠裝]三層棉柔舒適衛生紙10卷裝
     unit: roll
-    unit-convertsion: price / 15
-    groups: group1
+    unit-convertsion: price / 10 / 5
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_10050052B
+    name: 皇冠 - [3條優惠裝] 三層棉柔舒適衛生紙
+    unit: roll
+    unit-convertsion: price / 10 / 3
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_10050053D
+    name: 皇冠 - [5條優惠裝]三層純白潔淨衛生紙10卷裝
+    unit: roll
+    unit-convertsion: price / 10 / 5
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_P10050052
+    name: 皇冠 - [原箱27卷]皇冠3層棉柔舒適衛生紙
+    unit: roll
+    unit-convertsion: price / 27
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_P10050052A
+    name: 皇冠 - [2件優惠裝] [原箱27卷]皇冠3層棉柔舒適衛生紙
+    unit: roll
+    unit-convertsion: price / 27 / 2
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_10050053B
+    name: 皇冠 - [3條優惠裝] 三層純白衛生紙
+    unit: roll
+    unit-convertsion: price / 10 / 3
+    tags: 
+      - 廁紙
+  - source: hktvmall
+    id: H0888001_S_10050058C
+    name: 絲潔 - [4件優惠裝] 萬用紙6卷裝
+    unit: roll
+    unit-convertsion: price / 6 / 4
+    tags: 
+      - 廚房紙
+  - source: hktvmall
+    id: H0888001_S_10050060E
+    name: 絲潔 - [6件優惠裝] 萬用紙4卷裝
+    unit: roll
+    unit-convertsion: price / 4 / 6
+    tags: 
+      - 廚房紙
+  - source: hktvmall
+    id: H0888001_S_10003252
+    name: 碧蓮 - Oxi Action衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10003250
+    name: 碧蓮 - 衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10003250A
+    name: 碧蓮 - [優惠孖裝] 衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 / 2 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10022053A
+    name: 護麗 - [孖裝] 護麗 - 洗衣液 - 黑之寶
+    unit: 100ml
+    unit-convertsion: price / 1000 / 2 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10022053
+    name: 護麗 - 洗衣液 - 黑之寶
+    unit: 100ml
+    unit-convertsion: price / 1000 * 100
+    tags: 
+      - 洗衣液
   - source: hktvmall
     id: H0888001_S_10020081
     name: 白蘭氏 無糖燕窩
@@ -38,125 +121,475 @@ products:
     name: Oral B - 牙齒及牙肉護理不含酒精漱口水 - 孖裝
     unit: 100ml
     unit-convertsion: price / 750 / 2 * 100
+    tags: 
+      - 漱口水
+      - Zoro
   - source: hktvmall
     id: H0888001_S_10030319
     name: Oral B - 不含酒精漱口水(孖裝)
     unit: 100ml
     unit-convertsion: price / 500 / 2 * 100
+    tags: 
+      - 漱口水
+      - Zoro
   - source: hktvmall
     id: H0888001_S_P10014683
     name: 金象牌 - 頂上茉莉香米 15公斤
     unit: kg
     unit-convertsion: price / 15
+    tags: 
+      - 金象米
+      - Chopper
   - source: hktvmall
     id: H0888001_S_10016911A
     name: 金象牌 - 頂上茉莉香米 8公斤 x2
     unit: kg
     unit-convertsion: price / 8 / 2
+    tags: 
+      - 金象米
+      - Chopper
   - source: hktvmall
     id: H0888001_S_10016911
     name: 金象牌 - 頂上茉莉香米 8公斤
     unit: kg
     unit-convertsion: price / 8
+    tags: 
+      - 金象米
+      - Chopper
   - source: hktvmall
     id: H0888001_S_10015152
     name: 金象牌 - 頂上茉莉香米 5公斤
     unit: kg
     unit-convertsion: price / 5
+    tags: 
+      - 金象米
   - source: hktvmall
     id: H0888001_S_10001735
     name: 金象牌 - 頂上茉莉香米 2公斤
     unit: kg
     unit-convertsion: price / 2
+    tags: 
+      - 金象米
   - source: hktvmall
     id: H0888001_S_10015024C
     name: 鈣思寶 - 高鈣原味豆奶 250毫升6包裝 x 4排
     unit: 250ml
     unit-convertsion: price / 250 / 6 / 4 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10138408C
     name: 鈣思寶 - 鈣思寶高鈣無糖原味豆奶 250毫升6包裝 x 4排
     unit: 250ml
     unit-convertsion: price / 250 / 6 / 4 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10138408A
     name: 鈣思寶 - 鈣思寶高鈣無糖原味豆奶 250毫升6包裝 x 2排
     unit: 250ml
     unit-convertsion: price / 250 / 6 / 2 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10003309
     name: 鈣思寶 - 鈣思寶高鈣原味豆奶 250毫升9包裝
     unit: 250ml
     unit-convertsion: price / 250 / 9 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10003312E
     name: 鈣思寶 - 高鈣大豆健康飲品 1公升 x 6包
     unit: 250ml
     unit-convertsion: price / 1000 / 6 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10130495E
     name: 鈣思寶 - 鈣思寶高鈣無糖原味豆奶 1公升 x 6包
     unit: 250ml
     unit-convertsion: price / 1000 / 6 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10130495K
     name: 鈣思寶 - 無糖大豆高鈣健康飲品 1公升 x 12包
     unit: 250ml
     unit-convertsion: price / 1000 / 12 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10003312A
     name: 鈣思寶 - 高鈣大豆健康飲品 - 原味 1公升 x 3包
     unit: 250ml
     unit-convertsion: price / 1000 / 3 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10130495B
     name: 鈣思寶 - 鈣思寶高鈣無糖原味豆奶 1公升 x 3包
     unit: 250ml
     unit-convertsion: price / 1000 / 3 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: S2090001_S_4001031
     name: 鈣思寶 - 高鈣原味豆奶 (250毫升 X 6 X 2)
     unit: 250ml
     unit-convertsion: price / 250 / 6 / 2 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H0888001_S_10015024A
     name: 鈣思寶 - 鈣思寶高鈣原味豆奶 250毫升6包裝 x 2排
     unit: 250ml
     unit-convertsion: price / 250 / 6 / 2 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H8032001_S_MI-00034
     name: 鈣思寶 - 鈣思寶大豆營鈣 Calci Plus CA+ SOYA CALCIUM (BONE) N 250毫升6包裝 x 4排
     unit: 250ml
     unit-convertsion: price / 250 / 24 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H8032001_S_MI-00035
     name: 鈣思寶 - 鈣思寶大豆營鈣 Calci Plus CA+ SOYA CALCIUM (BONE) N 250毫升6包裝
     unit: 250ml
     unit-convertsion: price / 250 / 6 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H7509001_S_vtm2500601
     name: 維他奶 - 維他 鈣思寶 - 綠色 原味 250ml x 6 包
     unit: 250ml
     unit-convertsion: price / 250 / 6 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H7949001_S_DRKTNMILK004
     name: 維他 - 鈣思寶 - 高鈣大豆健康飲品 (原味) 1公升
     unit: 250ml
     unit-convertsion: price / 1000 * 250
+    tags: 
+      - 鈣思寶
   - source: hktvmall
     id: H7949001_S_DRKTNMILK003
     name: 維他 - 鈣思寶 - 無糖大豆高鈣健康飲品 1公升
     unit: 250ml
     unit-convertsion: price / 1000 * 250
-  
+    tags: 
+      - 鈣思寶
+  - source: hktvmall
+    id: H6544001_S_4008666211187
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗髮露 250ml
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10009531A
+    name: Alpecin - [優惠孖裝] [原裝正貨] C1咖啡因洗髮露 優惠孖裝 - 防脫髮 激活頭髮生長
+    unit: 250ml x 2
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10009531
+    name: Alpecin - [原裝正貨] C1咖啡因洗髮露 - 防脫髮 激活頭髮生長
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H6242001_S_11187
+    name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250ml [平行進口產品]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H7640001_S_4008666211187
+    name: Alpecin - C1咖啡因洗髮露 250ml - 防脫髮 激活頭髮生長 (平行進口)
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H6401001_S_ALC1CS250ML
+    name: Alpecin - Alpecin 男士C1咖啡因洗髮露 250ML [平行進口]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: S1061001_S_HAC-HAC-ALP-C1CSP
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗頭水 250ml (平行進口)【市集世界 - 德國市集】
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H8455001_S_4008666211187
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗髮露 250ml (4008666211187) -[平行進口]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H8455001_S_4008666211187d
+    name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
+    unit: 250ml x 2
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H6544001_S_4008666211187d
+    name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
+    unit: 250ml x 2
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H6242001_S_11187X6
+    name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250mlX6支 [平行進口產品]
+    unit: 250ml x 6
+    unit-convertsion: price / 6
+    tags: 
+      - 洗頭水
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10018199
+    name: 一定妥 - 成人日用褲 (大碼)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 成人紙尿片
+  - source: hktvmall
+    id: H5535005_S_108919
+    name: 大阪王將 - 味噌羽根煎餃 314g
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H5535005_S_109368
+    name: 大阪王將 - 咖喱煎餃 282Gram
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H5535005_S_108918
+    name: 大阪王將 - 芝士煎餃 274g
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7781001_S_F00115
+    name: 大阪王將 - 大阪王將羽根餃子12件裝 304g (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7781001_S_F00124
+    name: 大阪王將 - 大阪王將羽根芝士味煎餃 12隻 276g（急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7781001_S_F00120
+    name: 大阪王將 - 大阪王將羽根煎餃 味噌 12隻 （急凍）
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7781001_S_F00126
+    name: 大阪王將 - 大阪王將羽根咖哩餃子 12隻 282g (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H8480001_S_51047911
+    name: 大阪王將 - 大阪王將(羽根)餃子12件裝304克(急凍-18°C)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H8480001_S_51047912
+    name: 大阪王將 - 大阪王將(味噌羽根)餃子12件裝308克(急凍-18°C)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: S6087001_S_C00049a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (原味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H0150001_S_S121
+    name: 漁鮮快遞 - 大板王將羽根餃子314g (12隻)(急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: S6087001_S_C00027a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃(羽根味噌)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: S6087001_S_C00048a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (芝士味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: S6087001_S_DUJF2957
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃(咖哩味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7666001_S_OsakaOhshoGyoza-HanetsukiFlavor_314g
+    name: JP@FRESH - 大阪王將 - 羽根餃子12件裝 (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10018940A
+    name: 大阪王將 - 大阪王將餃子 (味噌) (2件裝) (急凍)
+    unit: pack
+    unit-convertsion: price / 2
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10018940
+    name: 大阪王將 - 大阪王將餃子 (味噌) (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H7666001_S_OsakaOhshoGyoza-WingsMisoFlavor_314g
+    name: JP@FRESH - 大板王將 - 味噌餃子12裝
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Chopper
+  - source: hktvmall
+    id: H0888001_S_10132277A
+    name: 可口可樂 - Plus- 膳食纖維 (無糖) - 罐裝 x 2
+    unit: can
+    unit-convertsion: price / 8 / 2
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H0888001_S_10132278A
+    name: 可口可樂 - Plus- 膳食纖維 (無糖) - 樽裝
+    unit: 330ml
+    unit-convertsion: price / 500 / 2
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H0888001_S_P10132277
+    name: 可口可樂 - [原箱] Plus- 膳食纖維 (無糖) - 罐裝
+    unit: can
+    unit-convertsion: price / 24
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: S2090001_S_400148_8C
+    name: 可口可樂 - 加系可口可樂膳食纖維(無糖汽水) (330毫升 X 8)
+    unit: can
+    unit-convertsion: price / 8
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H7509001_S_sw3300612
+    name: 可口可樂 - Plus- 白可樂 膳食纖維 (無糖) - 罐裝 330ml x 6
+    unit: can
+    unit-convertsion: price / 6
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H7509001_S_sw5000612
+    name: 可口可樂 - 樽裝 白可樂 Plus- 膳食纖維 (無糖) - 500ml x 6 支
+    unit: 330ml
+    unit-convertsion: price / 500 / 6 * 330
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H8032001_S_SD-00005
+    name: 可口可樂 - 加系可口可樂 (白色罐) Coca Cola Plus (罐裝- 8 X 330ml )
+    unit: can
+    unit-convertsion: price / 8
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: S2090001_S_400759F
+    name: 可口可樂 - [原箱] 樽裝 加系可口可樂膳食纖維(無糖汽水) (500毫升 X 24)
+    unit: 330ml
+    unit-convertsion: price / 500 / 24 * 330
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: /H8032001_S_SD-00004
+    name: 可口可樂 - 加系可口可樂 (白色罐) - Coca Cola Plus -原箱 (罐裝- 24 X 330ml )
+    unit: can
+    unit-convertsion: price / 24
+    tags: 
+      - 可樂
 
-groups:
-  - id: group1
-    name: group 1
-    description: description 1
-  - id: group2
-    name: group 2
-    description: description 2
+tags:
+  - name: Chopper
+    color: purple
+  - name: Zoro
+    color: purple
 
 notification:
   - name: telegram 
