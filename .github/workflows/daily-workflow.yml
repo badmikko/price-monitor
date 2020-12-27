@@ -15,7 +15,10 @@ jobs:
     steps:
 
     - name: Execution scope
-      run: echo Download: ${{ secrets.RUN_DOWNLOAD != '0' }}, Aggregator: ${{ secrets.RUN_AGGREGATOR != '0' }}
+      run: echo Download: $RUN_DOWNLOAD, Aggregator: $RUN_AGGREGATOR
+      env:
+        RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
+        RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
 
     - name: Checkout app repo
       uses: actions/checkout@v2
