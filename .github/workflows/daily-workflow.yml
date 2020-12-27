@@ -11,6 +11,8 @@ jobs:
   preflight:
     runs-on: ubuntu-latest
 
+    steps:
+      
     - name: check job activation
       outputs:
         RUN_DOWNLOAD: ${{ steps.checksecret.outputs.RUN_DOWNLOAD }}
