@@ -15,7 +15,8 @@ jobs:
     steps:
 
     - name: Execution scope
-      run: echo "Download: ${RUN_DOWNLOAD}, Aggregator: ${RUN_AGGREGATOR}"
+      run: |-
+        echo "Download: ${RUN_DOWNLOAD}, Aggregator: ${RUN_AGGREGATOR}"
       env:
         RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
         RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
