@@ -9,26 +9,24 @@ on:
 
 jobs:
   preflight:
+    name: Pre-flight check
     runs-on: ubuntu-latest
 
-    steps:
-      
-    - name: check job activation
-      outputs:
-        RUN_DOWNLOAD: ${{ steps.checksecret.outputs.RUN_DOWNLOAD }}
-        RUN_AGGREGATOR: ${{ steps.checksecret.outputs.RUN_AGGREGATOR }}
+    outputs:
+      RUN_DOWNLOAD: ${{ steps.checksecret.outputs.RUN_DOWNLOAD }}
+      RUN_AGGREGATOR: ${{ steps.checksecret.outputs.RUN_AGGREGATOR }}
 
-      steps:
-        - name: Check on Github secrets
-          id: checksecret
-          env:
-              RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
-              RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
-          run: |
-              echo "RUN_DOWNLOAD: ${{ env.RUN_DOWNLOAD != '0' }}"
-              echo "::set-output name=RUN_DOWNLOAD::${{ env.RUN_DOWNLOAD != '0' }}"
-              echo "RUN_AGGREGATOR: ${{ env.RUN_AGGREGATOR != '0' }}"
-              echo "::set-output name=RUN_AGGREGATOR::${{ env.RUN_AGGREGATOR != '0' }}"
+    steps:
+      - name: Check on Github secrets
+        id: checksecret
+        env:
+          RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
+          RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
+        run: |
+          echo "RUN_DOWNLOAD: ${{ env.RUN_DOWNLOAD != '0' }}"
+          echo "::set-output name=RUN_DOWNLOAD::${{ env.RUN_DOWNLOAD != '0' }}"
+          echo "RUN_AGGREGATOR: ${{ env.RUN_AGGREGATOR != '0' }}"
+          echo "::set-output name=RUN_AGGREGATOR::${{ env.RUN_AGGREGATOR != '0' }}"
               
   build:
 
