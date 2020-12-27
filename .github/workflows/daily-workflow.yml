@@ -8,6 +8,26 @@ on:
     - cron: '0 21 * * *' # At 05:00 HKT
 
 jobs:
+  preflight:
+    runs-on: ubuntu-latest
+
+    - name: check job activation
+      outputs:
+        RUN_DOWNLOAD: ${{ steps.checksecret.outputs.RUN_DOWNLOAD }}
+        RUN_AGGREGATOR: ${{ steps.checksecret.outputs.RUN_AGGREGATOR }}
+
+      steps:
+        - name: Check on Github secrets
+          id: checksecret
+          env:
+              RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
+              RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
+          run: |
+              echo "RUN_DOWNLOAD: ${{ env.RUN_DOWNLOAD != '0' }}"
+              echo "::set-output name=RUN_DOWNLOAD::${{ env.RUN_DOWNLOAD != '0' }}"
+              echo "RUN_AGGREGATOR: ${{ env.RUN_AGGREGATOR != '0' }}"
+              echo "::set-output name=RUN_AGGREGATOR::${{ env.RUN_AGGREGATOR != '0' }}"
+              
   build:
 
     runs-on: ubuntu-latest
@@ -15,11 +35,10 @@ jobs:
     steps:
 
     - name: Execution scope
+      needs: [checksecret]
       run: |-
-        echo "Download: ${RUN_DOWNLOAD}, Aggregator: ${RUN_AGGREGATOR}"
-      env:
-        RUN_DOWNLOAD: ${{ secrets.RUN_DOWNLOAD }}
-        RUN_AGGREGATOR: ${{ secrets.RUN_AGGREGATOR }}
+        echo "Run Download: ${needs.preflight.outputs.RUN_DOWNLOAD}"
+        echo "Run Aggregator: ${needs.preflight.outputs.}"
 
     - name: Checkout app repo
       uses: actions/checkout@v2
@@ -43,14 +62,16 @@ jobs:
       working-directory: ./app
       
     - name: Run price-download
-      if: ${{ secrets.RUN_DOWNLOAD != '0' }}
+      needs: [checksecret]
+      if: needs.checksecret.outputs.RUN_DOWNLOAD == 'true'
       run: node ./price-download.js --dest ../store
       working-directory: ./app
       env:
         DEBUG: "*,-axios,-follow-redirects"
       
     - name: Run price-aggregator
-      if: ${{ secrets.RUN_AGGREGATOR != '0' }}
+      needs: [checksecret]
+      if: needs.checksecret.outputs.RUN_AGGREGATOR == 'true'
       run: node ./price-aggregator.js --dest ../store
       working-directory: ./app
       env:
