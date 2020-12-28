@@ -4,10 +4,10 @@
   "description": "price monitor",
   "main": "price-download.js",
   "dependencies": {
+    "@fast-csv/format": "^4.3.5",
     "await-timeout": "^1.1.1",
     "axios": "^0.21.0",
     "csv-parser": "^3.0.0",
-    "csv-writer": "^1.6.0",
     "debug": "^4.3.1",
     "filenamify": "^4.2.0",
     "handlebars": "^4.7.6",

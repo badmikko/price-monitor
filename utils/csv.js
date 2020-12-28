@@ -22,19 +22,8 @@ const OLD_HEADER = [
 const csvParser = require('csv-parser');
 
 // JSON -> CSV
-const createCsvStringifier = require('csv-writer').createObjectCsvStringifier;
-const csvStringifier = createCsvStringifier({
-  header: CURRENT_HEADER
-});
-
- 
-function getHeader() {
-  return csvStringifier.getHeaderString()
-}
-
-function getRow(records) {
-  return csvStringifier.stringifyRecords(records);
-}
+// https://c2fo.io/fast-csv/docs/formatting/getting-started
+const { format } = require('@fast-csv/format');
 
 async function writeCSV(filePath, records, options = {}) {
   const defaultOptions = {
@@ -43,11 +32,33 @@ async function writeCSV(filePath, records, options = {}) {
   };
   let mergedOptions = {...defaultOptions, ...options};
 
-  let content = getRow(records)
-  if (!fs.existsSync(filePath) || mergedOptions.flag === "w") {
-    content = getHeader() + content;
-  }
-  await fs.promises.writeFile(filePath, content, mergedOptions);
+  return new Promise((resolve, reject) => {
+    const csvStream = format({ 
+      headers: CURRENT_HEADER.map(row => row.title) 
+    })
+    .transform(function(obj) {
+      return Object
+        .entries(obj)
+        .map(row => {
+          if(row[0].endsWith("Price")) { 
+            row[1] = parseFloat(row[1]).toFixed(2); 
+          }
+          row[0] = CURRENT_HEADER.filter(h => h.id === row[0])[0]?.title || row[0];
+          return row
+        })
+        .reduce((map, obj) => (map[obj[0]] = obj[1], map), {});
+    });
+
+    const writableStream = fs.createWriteStream(filePath)
+      .on('finish', () => resolve(null))
+      .on('error', (e) => reject(e));
+
+    csvStream.pipe(writableStream);
+    for(let record of records) {
+      csvStream.write(record);
+    }
+    csvStream.end();
+  });
 }
 
 async function readCSV(filePath) {
@@ -75,8 +86,6 @@ async function readCSV(filePath) {
 }
 
 module.exports = {
-  getHeader,
-  getRow,
   readCSV,
   writeCSV
 }

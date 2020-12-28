@@ -123,7 +123,7 @@ products:
     unit-convertsion: price / 750 / 2 * 100
     tags: 
       - 漱口水
-      - Zoro
+      - Lisa
   - source: hktvmall
     id: H0888001_S_10030319
     name: Oral B - 不含酒精漱口水(孖裝)
@@ -131,7 +131,7 @@ products:
     unit-convertsion: price / 500 / 2 * 100
     tags: 
       - 漱口水
-      - Zoro
+      - Lisa
   - source: hktvmall
     id: H0888001_S_P10014683
     name: 金象牌 - 頂上茉莉香米 15公斤
@@ -139,7 +139,7 @@ products:
     unit-convertsion: price / 15
     tags: 
       - 金象米
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10016911A
     name: 金象牌 - 頂上茉莉香米 8公斤 x2
@@ -147,7 +147,7 @@ products:
     unit-convertsion: price / 8 / 2
     tags: 
       - 金象米
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10016911
     name: 金象牌 - 頂上茉莉香米 8公斤
@@ -155,7 +155,7 @@ products:
     unit-convertsion: price / 8
     tags: 
       - 金象米
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10015152
     name: 金象牌 - 頂上茉莉香米 5公斤
@@ -289,7 +289,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10009531A
     name: Alpecin - [優惠孖裝] [原裝正貨] C1咖啡因洗髮露 優惠孖裝 - 防脫髮 激活頭髮生長
@@ -297,7 +297,7 @@ products:
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10009531
     name: Alpecin - [原裝正貨] C1咖啡因洗髮露 - 防脫髮 激活頭髮生長
@@ -305,7 +305,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H6242001_S_11187
     name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250ml [平行進口產品]
@@ -313,7 +313,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7640001_S_4008666211187
     name: Alpecin - C1咖啡因洗髮露 250ml - 防脫髮 激活頭髮生長 (平行進口)
@@ -321,7 +321,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H6401001_S_ALC1CS250ML
     name: Alpecin - Alpecin 男士C1咖啡因洗髮露 250ML [平行進口]
@@ -329,7 +329,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: S1061001_S_HAC-HAC-ALP-C1CSP
     name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗頭水 250ml (平行進口)【市集世界 - 德國市集】
@@ -337,7 +337,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H8455001_S_4008666211187
     name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗髮露 250ml (4008666211187) -[平行進口]
@@ -345,7 +345,7 @@ products:
     unit-convertsion: price
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H8455001_S_4008666211187d
     name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
@@ -353,7 +353,7 @@ products:
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H6544001_S_4008666211187d
     name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
@@ -361,7 +361,7 @@ products:
     unit-convertsion: price / 2
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H6242001_S_11187X6
     name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250mlX6支 [平行進口產品]
@@ -369,7 +369,7 @@ products:
     unit-convertsion: price / 6
     tags: 
       - 洗頭水
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10018199
     name: 一定妥 - 成人日用褲 (大碼)
@@ -377,6 +377,7 @@ products:
     unit-convertsion: price
     tags: 
       - 成人紙尿片
+      - Grampa
   - source: hktvmall
     id: H5535005_S_108919
     name: 大阪王將 - 味噌羽根煎餃 314g
@@ -384,7 +385,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H5535005_S_109368
     name: 大阪王將 - 咖喱煎餃 282Gram
@@ -392,7 +393,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H5535005_S_108918
     name: 大阪王將 - 芝士煎餃 274g
@@ -400,7 +401,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7781001_S_F00115
     name: 大阪王將 - 大阪王將羽根餃子12件裝 304g (急凍)
@@ -408,7 +409,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7781001_S_F00124
     name: 大阪王將 - 大阪王將羽根芝士味煎餃 12隻 276g（急凍)
@@ -416,7 +417,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7781001_S_F00120
     name: 大阪王將 - 大阪王將羽根煎餃 味噌 12隻 （急凍）
@@ -424,7 +425,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7781001_S_F00126
     name: 大阪王將 - 大阪王將羽根咖哩餃子 12隻 282g (急凍)
@@ -432,7 +433,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H8480001_S_51047911
     name: 大阪王將 - 大阪王將(羽根)餃子12件裝304克(急凍-18°C)
@@ -440,7 +441,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H8480001_S_51047912
     name: 大阪王將 - 大阪王將(味噌羽根)餃子12件裝308克(急凍-18°C)
@@ -448,7 +449,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: S6087001_S_C00049a
     name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (原味)
@@ -456,7 +457,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0150001_S_S121
     name: 漁鮮快遞 - 大板王將羽根餃子314g (12隻)(急凍)
@@ -464,7 +465,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: S6087001_S_C00027a
     name: 千歲食品 - 海宏/千歲-大阪王將煎餃(羽根味噌)
@@ -472,7 +473,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: S6087001_S_C00048a
     name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (芝士味)
@@ -480,7 +481,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: S6087001_S_DUJF2957
     name: 千歲食品 - 海宏/千歲-大阪王將煎餃(咖哩味)
@@ -488,7 +489,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7666001_S_OsakaOhshoGyoza-HanetsukiFlavor_314g
     name: JP@FRESH - 大阪王將 - 羽根餃子12件裝 (急凍)
@@ -496,7 +497,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10018940A
     name: 大阪王將 - 大阪王將餃子 (味噌) (2件裝) (急凍)
@@ -504,7 +505,7 @@ products:
     unit-convertsion: price / 2
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10018940
     name: 大阪王將 - 大阪王將餃子 (味噌) (急凍)
@@ -512,7 +513,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H7666001_S_OsakaOhshoGyoza-WingsMisoFlavor_314g
     name: JP@FRESH - 大板王將 - 味噌餃子12裝
@@ -520,7 +521,7 @@ products:
     unit-convertsion: price
     tags: 
       - 王將餃子
-      - Chopper
+      - Bart
   - source: hktvmall
     id: H0888001_S_10132277A
     name: 可口可樂 - Plus- 膳食纖維 (無糖) - 罐裝 x 2
@@ -733,9 +734,11 @@ products:
       - 蒸餾水
 
 tags:
-  - name: Chopper
+  - name: Bart
     color: purple
-  - name: Zoro
+  - name: Lisa
+    color: purple
+  - name: Grampa
     color: purple
 
 notification:

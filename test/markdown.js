@@ -1,5 +1,5 @@
 const assert = require('assert');
-const md = require("../untils/markdown");
+const md = require("../utils/markdown");
 
 
 describe('markdown', function() {
