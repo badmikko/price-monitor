@@ -1,0 +1,25 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10139004
+    name: 奧運2020 竹碗
+    unit: item
+    unit-convertsion: price
+  - source: hktvmall
+    id: H0888001_S_10140667
+    name: 威露士 泡沫殺菌潔手液敏感呵護
+    unit: 100ml
+    unit-convertsion: price / 280 * 100
+  - source: hktvmall
+    id: H0888001_S_10020081
+    name: 白蘭氏 無糖燕窩
+    unit: 100g
+    unit-convertsion: price / 6 / 70 * 100
+  - source: hktvmall
+    id: H0888001_S_10018199
+    name: 一定妥 - 成人日用褲 (大碼)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 成人紙尿片
+      - Grampa

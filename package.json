@@ -22,6 +22,7 @@
     "mocha": "^8.2.1",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.32",
+    "object-merge-advanced": "^10.12.1",
     "tablemark": "^2.0.0",
     "turndown": "^7.0.0",
     "unicode-substring": "^1.0.0",

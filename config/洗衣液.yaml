@@ -1,0 +1,37 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10003252
+    name: 碧蓮 - Oxi Action衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10003250
+    name: 碧蓮 - 衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10003250A
+    name: 碧蓮 - [優惠孖裝] 衣物預潔劑
+    unit: 100ml
+    unit-convertsion: price / 500 / 2 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10022053A
+    name: 護麗 - [孖裝] 護麗 - 洗衣液 - 黑之寶
+    unit: 100ml
+    unit-convertsion: price / 1000 / 2 * 100
+    tags: 
+      - 洗衣液
+  - source: hktvmall
+    id: H0888001_S_10022053
+    name: 護麗 - 洗衣液 - 黑之寶
+    unit: 100ml
+    unit-convertsion: price / 1000 * 100
+    tags: 
+      - 洗衣液

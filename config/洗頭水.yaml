@@ -1,0 +1,90 @@
+---
+products:
+  - source: hktvmall
+    id: H6544001_S_4008666211187
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗髮露 250ml
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10009531A
+    name: Alpecin - [優惠孖裝] [原裝正貨] C1咖啡因洗髮露 優惠孖裝 - 防脫髮 激活頭髮生長
+    unit: 250ml
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10009531
+    name: Alpecin - [原裝正貨] C1咖啡因洗髮露 - 防脫髮 激活頭髮生長
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H6242001_S_11187
+    name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250ml [平行進口產品]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H7640001_S_4008666211187
+    name: Alpecin - C1咖啡因洗髮露 250ml - 防脫髮 激活頭髮生長 (平行進口)
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H6401001_S_ALC1CS250ML
+    name: Alpecin - Alpecin 男士C1咖啡因洗髮露 250ML [平行進口]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: S1061001_S_HAC-HAC-ALP-C1CSP
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗頭水 250ml (平行進口)【市集世界 - 德國市集】
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H8455001_S_4008666211187
+    name: Alpecin - 德國版Alpecin 咖啡因防脫髮洗髮露 250ml (4008666211187) -[平行進口]
+    unit: 250ml
+    unit-convertsion: price
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H8455001_S_4008666211187d
+    name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
+    unit: 250ml
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H6544001_S_4008666211187d
+    name: Alpecin - (2 件裝)(德國版)Alpecin 咖啡因防脫髮洗髮露 250ml -[平行進口](4008666211187)
+    unit: 250ml
+    unit-convertsion: price / 2
+    tags: 
+      - 洗頭水
+      - Bart
+  - source: hktvmall
+    id: H6242001_S_11187X6
+    name: Alpecin - 咖啡因洗髮露 C1 - 強效抗脫髮 - 250mlX6支 [平行進口產品]
+    unit: 250ml
+    unit-convertsion: price / 6
+    tags: 
+      - 洗頭水
+      - Bart

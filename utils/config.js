@@ -1,6 +1,8 @@
 const yaml = require('js-yaml');
-const fs   = require('fs');
+const fs = require('fs');
+const path = require('path');
 const Handlebars = require('handlebars');
+const objectMergeAdvanced = require("object-merge-advanced");
 
 function parseConfigWithTemplate(configPath, templatePath) {
 
@@ -20,6 +22,40 @@ function parseConfigWithTemplate(configPath, templatePath) {
   }
 }
 
+
+function parseConfigs(configDirPath) {
+  const configPaths = fs.readdirSync(configDirPath)
+    .filter(file => path.extname(file).toLowerCase() === ".yaml");
+  const options = {
+    hardArrayConcat: false,
+    hardArrayConcatKeys: ["products"],
+    cb: (inputArg1, inputArg2, resultAboutToBeReturned, infoObj) => {
+      if(infoObj.key === "products") {
+        return [...inputArg2, ...inputArg1]
+          .filter((v, i, array) => array.filter(r => r.id == v.id && r.source == v.source)[0] === v)
+          .sort((a, b) => a.id?.localeCompare(b.id) || a.source?.localeCompare(b.source));
+      }
+      //console.log(`${infoObj} = ${resultAboutToBeReturned}`)
+      return resultAboutToBeReturned;
+    },
+  };
+
+  let config = {}
+  for(let configPath of configPaths) {
+    try {
+      const configText = fs.readFileSync(path.join(configDirPath, configPath), 'utf8');
+      const partialConfig = yaml.safeLoad(configText);
+
+      config = objectMergeAdvanced(config, partialConfig, options);
+    } catch (e) {
+      throw `Cannot load config file at ${configPath}`;
+    }
+  }
+
+  return config;
+}
+
 module.exports = {
-  parseConfigWithTemplate
+  parseConfigWithTemplate,
+  parseConfigs
 };

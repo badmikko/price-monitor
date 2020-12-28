@@ -1,0 +1,18 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10030825
+    name: Oral B - 牙齒及牙肉護理不含酒精漱口水 - 孖裝
+    unit: 100ml
+    unit-convertsion: price / 750 / 2 * 100
+    tags: 
+      - 漱口水
+      - Lisa
+  - source: hktvmall
+    id: H0888001_S_10030319
+    name: Oral B - 不含酒精漱口水(孖裝)
+    unit: 100ml
+    unit-convertsion: price / 500 / 2 * 100
+    tags: 
+      - 漱口水
+      - Lisa

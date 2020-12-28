@@ -7,13 +7,13 @@ describe('markdown', function() {
     it('simple convert', function() {
       const input = [
         {'one': 1, 'two': 2, 'three': 3},
-        {'one': 1, 'two': 2, 'three': 3}
+        {'one': 1, 'two': 2, 'three': null}
       ];
       const expected = 
       '| One   | Two   | Three |\n' +
       '| ----- | ----- | ----- |\n' +
       '| 1     | 2     | 3     |\n' +
-      '| 1     | 2     | 3     |\n'
+      '| 1     | 2     |       |\n'
       assert.strictEqual(md.array2mdTable(input), expected);
     });
   });

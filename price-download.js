@@ -6,7 +6,8 @@ const file = require("./utils/file");
 const csv = require("./utils/csv");
 const date = require("./utils/date");
 const system = require("./utils/system");
-const config = require("./utils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
+//const config = require("./utils/config").parseConfigWithTemplate("./config/config.yaml", "./config/template.yaml");
+const config = require("./utils/config").parseConfigs("./config/");
 
 const argv = system.parseArgv();
 const basePath = argv.dest || file.pathResolve(".");

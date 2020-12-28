@@ -1,0 +1,12 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10012511
+    name: 西班牙咸豬手
+    unit: pack
+    unit-convertsion: price
+  - source: hktvmall
+    id: H0888001_S_10138948
+    name: 雞蛋
+    unit: 100ml
+    unit-convertsion: price / 280 * 100

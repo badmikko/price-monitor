@@ -1,0 +1,18 @@
+---
+products: []
+
+tags:
+  - name: Bart
+    color: purple
+  - name: Lisa
+    color: purple
+  - name: Grampa
+    color: purple
+
+notification:
+  - name: telegram 
+    recipient: {{TELEGRAM_RECIPIENT}}
+    condition: true
+
+app:
+  timePeriod: 30

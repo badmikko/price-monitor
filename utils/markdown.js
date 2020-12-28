@@ -41,9 +41,16 @@ function object2mdTable(obj) {
 }
 
 function array2mdTable(array, options) {
-  const defaultOptions = {};
+  const defaultOptions = {
+    stringify
+  };
   let mergedOptions = {...defaultOptions, ...options};
   return tablemark(array, mergedOptions)
+}
+
+function stringify(v) {
+  if (typeof v === 'undefined' || v === null) return ''
+  return String(v).replace(/\|/g, '\\|')
 }
 
 

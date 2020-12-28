@@ -1,0 +1,40 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_P10014683
+    name: 金象牌 - 頂上茉莉香米 15公斤
+    unit: kg
+    unit-convertsion: price / 15
+    tags: 
+      - 金象米
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10016911A
+    name: 金象牌 - 頂上茉莉香米 8公斤 x2
+    unit: kg
+    unit-convertsion: price / 8 / 2
+    tags: 
+      - 金象米
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10016911
+    name: 金象牌 - 頂上茉莉香米 8公斤
+    unit: kg
+    unit-convertsion: price / 8
+    tags: 
+      - 金象米
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10015152
+    name: 金象牌 - 頂上茉莉香米 5公斤
+    unit: kg
+    unit-convertsion: price / 5
+    tags: 
+      - 金象米
+  - source: hktvmall
+    id: H0888001_S_10001735
+    name: 金象牌 - 頂上茉莉香米 2公斤
+    unit: kg
+    unit-convertsion: price / 2
+    tags: 
+      - 金象米

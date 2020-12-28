@@ -1,0 +1,16 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10050058C
+    name: 絲潔 - [4件優惠裝] 萬用紙6卷裝
+    unit: roll
+    unit-convertsion: price / 6 / 4
+    tags: 
+      - 廚房紙
+  - source: hktvmall
+    id: H0888001_S_10050060E
+    name: 絲潔 - [6件優惠裝] 萬用紙4卷裝
+    unit: roll
+    unit-convertsion: price / 4 / 6
+    tags: 
+      - 廚房紙

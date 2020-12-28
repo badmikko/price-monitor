@@ -1,0 +1,146 @@
+---
+products:
+  - source: hktvmall
+    id: H5535005_S_108919
+    name: 大阪王將 - 味噌羽根煎餃 314g
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H5535005_S_109368
+    name: 大阪王將 - 咖喱煎餃 282Gram
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H5535005_S_108918
+    name: 大阪王將 - 芝士煎餃 274g
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7781001_S_F00115
+    name: 大阪王將 - 大阪王將羽根餃子12件裝 304g (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7781001_S_F00124
+    name: 大阪王將 - 大阪王將羽根芝士味煎餃 12隻 276g（急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7781001_S_F00120
+    name: 大阪王將 - 大阪王將羽根煎餃 味噌 12隻 （急凍）
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7781001_S_F00126
+    name: 大阪王將 - 大阪王將羽根咖哩餃子 12隻 282g (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H8480001_S_51047911
+    name: 大阪王將 - 大阪王將(羽根)餃子12件裝304克(急凍-18°C)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H8480001_S_51047912
+    name: 大阪王將 - 大阪王將(味噌羽根)餃子12件裝308克(急凍-18°C)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: S6087001_S_C00049a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (原味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H0150001_S_S121
+    name: 漁鮮快遞 - 大板王將羽根餃子314g (12隻)(急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: S6087001_S_C00027a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃(羽根味噌)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: S6087001_S_C00048a
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃 (芝士味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: S6087001_S_DUJF2957
+    name: 千歲食品 - 海宏/千歲-大阪王將煎餃(咖哩味)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7666001_S_OsakaOhshoGyoza-HanetsukiFlavor_314g
+    name: JP@FRESH - 大阪王將 - 羽根餃子12件裝 (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10018940A
+    name: 大阪王將 - 大阪王將餃子 (味噌) (2件裝) (急凍)
+    unit: pack
+    unit-convertsion: price / 2
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H0888001_S_10018940
+    name: 大阪王將 - 大阪王將餃子 (味噌) (急凍)
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart
+  - source: hktvmall
+    id: H7666001_S_OsakaOhshoGyoza-WingsMisoFlavor_314g
+    name: JP@FRESH - 大板王將 - 味噌餃子12裝
+    unit: pack
+    unit-convertsion: price
+    tags: 
+      - 王將餃子
+      - Bart

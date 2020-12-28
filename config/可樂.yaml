@@ -1,0 +1,65 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10132277A
+    name: 可口可樂 - Plus- 膳食纖維 (無糖) - 罐裝 x 2
+    unit: can
+    unit-convertsion: price / 8 / 2
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H0888001_S_10132278A
+    name: 可口可樂 - Plus- 膳食纖維 (無糖) - 樽裝
+    unit: 330ml
+    unit-convertsion: price / 500 / 2 * 330
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H0888001_S_P10132277
+    name: 可口可樂 - [原箱] Plus- 膳食纖維 (無糖) - 罐裝
+    unit: can
+    unit-convertsion: price / 24
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: S2090001_S_400148_8C
+    name: 可口可樂 - 加系可口可樂膳食纖維(無糖汽水) (330毫升 X 8)
+    unit: can
+    unit-convertsion: price / 8
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H7509001_S_sw3300612
+    name: 可口可樂 - Plus- 白可樂 膳食纖維 (無糖) - 罐裝 330ml x 6
+    unit: can
+    unit-convertsion: price / 6
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H7509001_S_sw5000612
+    name: 可口可樂 - 樽裝 白可樂 Plus- 膳食纖維 (無糖) - 500ml x 6 支
+    unit: 330ml
+    unit-convertsion: price / 500 / 6 * 330
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H8032001_S_SD-00005
+    name: 可口可樂 - 加系可口可樂 (白色罐) Coca Cola Plus (罐裝- 8 X 330ml )
+    unit: can
+    unit-convertsion: price / 8
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: S2090001_S_400759F
+    name: 可口可樂 - [原箱] 樽裝 加系可口可樂膳食纖維(無糖汽水) (500毫升 X 24)
+    unit: 330ml
+    unit-convertsion: price / 500 / 24 * 330
+    tags: 
+      - 可樂
+  - source: hktvmall
+    id: H8032001_S_SD-00004
+    name: 可口可樂 - 加系可口可樂 (白色罐) - Coca Cola Plus -原箱 (罐裝- 24 X 330ml)
+    unit: can
+    unit-convertsion: price / 24
+    tags: 
+      - 可樂

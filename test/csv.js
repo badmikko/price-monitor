@@ -82,7 +82,8 @@ describe('csv', function() {
           promotions: 'test2',
           regularPrice: 15,
           remarks: 'test1',
-          unitPrice: 14
+          unitPrice: 14, 
+          
         }
       ];
       await csv.writeCSV("./test/file-cycle.csv", input);
