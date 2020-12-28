@@ -732,6 +732,36 @@ products:
     unit-convertsion: price / 700 / 24 * 100
     tags: 
       - 蒸餾水
+  - source: amazonjp
+    id: B010AL4PBS
+    name: Mitsubishi Rayon Cleansui [Genuine Product] MDC01Sx3 Larger Sized Pack Cleansui Mono Series Replacement Cartridges MDC01SZ-AZ
+    unit: item
+    unit-convertsion: price / 3
+    currency-symbol: ¥
+  - source: amazonjp
+    id: B0060P7K0C
+    name: Krinsui MDC01SZ Water Filter Cartridge Replacement Pack of 3 MONO Series
+    unit: item
+    unit-convertsion: price / 3
+    currency-symbol: ¥
+  - source: amazonjp
+    id: B003AZZS54
+    name: Mitsubishi Chemical Cleansui Water Filter Cartridge Replacement Mono Series White Approx. Height 3.9 x Diameter 2.4 inches (10 x 6 cm), 7 + 2 Substances Removal, Pack of 2
+    unit: item
+    unit-convertsion: price / 2
+    currency-symbol: ¥
+  - source: amazonjp
+    id: B010AL4CTS
+    name: Kleinui HGC9SZ-AZ Water Filter Cartridge Replacement HGC9S x 3 Pack - Increased Pack - CSP Series
+    unit: item
+    unit-convertsion: price / 3
+    currency-symbol: ¥
+  - source: amazonjp
+    id: B00200L8Q8
+    name: Kleinui CSP Series HGC9SW Water Filter Cartridge Replacement Pack of 2
+    unit: item
+    unit-convertsion: price / 2
+    currency-symbol: ¥
 
 tags:
   - name: Bart

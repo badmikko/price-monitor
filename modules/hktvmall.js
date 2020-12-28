@@ -10,7 +10,7 @@ const options = {
 } 
 
 async function retrieve(product) {
-  const log = require('debug')(`hktv-mall:${product.id}`);
+  const log = require('debug')(`hktvmall:${product.id}`);
   const parser = new FormulaParser();
   
   let response;
