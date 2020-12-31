@@ -25,7 +25,7 @@ products:
     id: H0888001_S_10020854K
     name: Watsons - 屈臣氏蒸餾水 x 12
     unit: 100ml
-    unit-convertsion: price / 800 / 24 * 100
+    unit-convertsion: price / 800 / 12 * 100
     tags: 
       - 蒸餾水
   - source: hktvmall
