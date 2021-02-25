@@ -1,0 +1,9 @@
+---
+products:
+  - source: hktvmall
+    id: H0888001_S_10002839
+    name: 歐寶 - 營養麥(不另加糖)
+    unit: 100g
+    unit-convertsion: price / 560 * 100
+    tags: 
+      - 營養穀物
